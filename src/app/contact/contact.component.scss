@@ -1,0 +1,28 @@
+@import '../sass/variables';
+@import '../sass/mixins';
+@import '../sass/placeholders';
+
+.blue-bg{
+    @extend %page-nav;
+}
+.contact{
+    @include padding_sec (5rem);
+    h3{
+        @include play (1.5rem);
+        color:$blue;
+        &:after{
+            @include line ($blue);
+        }
+    }
+    textarea{
+        height: 10.3rem;
+    }
+    button{
+        @include raleway (0.875rem);
+        width: 6.125rem;
+        height: 2.3125rem;
+    }
+}
+iframe{
+    margin-bottom: -0.4rem;
+}

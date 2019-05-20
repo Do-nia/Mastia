@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+// @import '~bootstrap/dist/css/bootstrap.min.css';
+@import 'app/sass/variables';
+@import 'app/sass/mixins';
+@import 'app/sass/placeholders';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+html{
+    font-size: 16px;
+    @media (max-width:1024px){
+        font-size: 12px;
+    }
+}
+@font-face{
+    font-family: 'awesome';
+    src: url('assets/fonts/FontAwesome.otf');
+}

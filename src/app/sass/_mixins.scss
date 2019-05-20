@@ -1,0 +1,42 @@
+@mixin backgroundColor($bgColor) {
+    background-color: $bgColor;
+}
+@mixin padding_sec ($padding){
+    padding: $padding 0;
+}
+@mixin overlay($top , $left){
+    position: absolute;
+    top: $top;
+    left:$left;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    span{
+        @include fontawsome (2.1875rem);
+    }
+}
+@mixin line($color , $width:4.375rem){
+    border-bottom: 0.125rem solid $color;
+    content: "";
+    display: block;
+    margin:1.25rem 0 1.75rem 0;
+    width: $width;
+}
+// fonts
+@mixin open_sans ($size:none){
+    font-family: 'OpenSans-Regular', sans-serif;
+	font-size: $size;
+}
+@mixin play ($size:none){
+    font-family: 'Play', sans-serif;
+	font-size: $size;
+}
+@mixin raleway ($size:none){
+    font-family: 'Raleway', sans-serif;
+    font-size: $size;
+}
+@mixin fontawsome ($size:none) {
+    font-family: 'awesome';
+    font-size: $size;
+    color:$iconGrey;
+}

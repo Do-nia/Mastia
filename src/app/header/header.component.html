@@ -1,0 +1,64 @@
+<header class="shadow-sm p-3 bg-white">
+  <section class="container">
+    <div class="row">
+      <!-- social icons -->
+      <div class="social col-lg-6">
+        <span class="mr-2"></span>
+        <span class="mr-2"></span>
+        <span class="mr-2"></span>
+        <span></span>
+      </div>
+      <div class="contact col-lg-6">
+        <div class="row">
+          <!-- contact -->
+          <div class="col-lg-4 text-center p-0">
+            <h5><span class="mr-md-1 mr-lg-2"></span>Mon - Sat: 7:00 - 17:00</h5>
+          </div>
+          <div class="col-lg-4 text-center p-0">
+            <h5><span class="mr-md-1 mr-lg-2"> </span>+ 386 40 111 5555</h5>
+          </div>
+          <div class="col-lg-4 text-center pl-0">
+            <h5><span class="mr-md-1 mr-lg-2"> </span>info@yourdomain.com</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+<!-- navbar -->
+<nav class="navbar navbar-expand-md scrolling ">
+  <section class="container">
+    <a href="index.html" class="navbar-brand mr-auto">
+      <img src="../../assets/img/checkbox-logo.png" alt="logo">
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="navbar-nav ml-auto text-uppercase">
+        <li class="nav-item">
+          <a href="#home" class="nav-link mr-2" [routerLink]="['/']" routerLinkActive="router-link-active"
+            [routerLinkActiveOptions]="{ exact: true }">{{ 'home' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about_us" class="nav-link mr-2">{{ 'aboutUs' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a href="#pages" class="nav-link mr-2" [routerLink]="['/News']" routerLinkActive="router-link-active"
+          [routerLinkActiveOptions]="{ exact: true }">{{ 'news' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link mr-2">{{ 'projects' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a href="#blog" class="nav-link mr-2">{{ 'blog' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact_us" class="nav-link" [routerLink]="['/Contact']" routerLinkActive="router-link-active"
+            [routerLinkActiveOptions]="{ exact: true }"> {{ 'contactUs' | translate }}</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</nav>
+<router-outlet></router-outlet>

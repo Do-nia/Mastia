@@ -1,0 +1,25 @@
+@import '../sass/variables';
+@import '../sass/mixins';
+@import '../sass/placeholders';
+header{
+    @media (max-width:1200px){
+        display: none;
+    }
+    span{
+        @include fontawsome (0.875rem);
+    }
+    h5{
+        @include open_sans (0.875rem);
+    }
+}
+nav{
+    li{
+        a{
+            @include open_sans (0.875rem);
+            color:$iconGrey;
+        }
+        .router-link-active{
+            color:$blue;
+        }
+    }
+}

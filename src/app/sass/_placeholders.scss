@@ -1,0 +1,8 @@
+%page-nav{
+    @include backgroundColor($blue);
+    @include padding_sec (1.56rem);
+    h3{
+        @include play (1.5rem);
+ 
+    }
+}

@@ -1,0 +1,36 @@
+@import '../sass/variables';
+@import '../sass/mixins';
+@import '../sass/placeholders';
+
+.get-touch{
+    @include backgroundColor($blue);
+    h3{
+        @include play (1.5rem);
+    }
+}
+footer{
+    @include backgroundColor($blackGrey);
+    @include padding_sec (3.75rem);
+    h4{
+        @include play (1.25rem);
+        color:$blue;
+    }
+    h5 , p{
+        @include open_sans (0.875rem);
+        color:$white;
+    }
+    span{
+        @include fontawsome (0.875rem);
+        color: $blue;
+    }
+}
+.last{
+    @include backgroundColor($black);
+    @include padding_sec (2.18rem);
+    span{
+        color: $red;
+    }
+    h5{
+        @include open_sans (0.8125rem);
+    }
+}

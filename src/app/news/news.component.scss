@@ -1,0 +1,75 @@
+@import '../sass/variables';
+@import '../sass/mixins';
+@import '../sass/placeholders';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+.blue-bg{
+    @extend %page-nav;
+}
+.news{
+    @include padding_sec (5rem);
+    .left-news{
+        h3{
+            @include play (1.5rem);
+        }
+        button{
+            @include backgroundColor($blue);
+            @include open_sans (0.875rem);
+        }
+        .news-img{
+            @include backgroundColor($blackGrey);
+            width: 100%;
+            height:21.68rem;
+        }
+        .date{
+            @include backgroundColor($blue);
+            bottom: 10%;
+            span{
+                @include open_sans (0.875rem);
+            }
+        }
+        .arrows{
+            span{
+                @include backgroundColor($blue);
+                @include fontawsome (1.02rem);
+            }
+        }
+    }
+    .right-news{
+        .search{
+            input{
+                @include open_sans (0.875rem);
+            }
+            span{
+                @include fontawsome (0.875rem);
+                left: 88%;
+                top: 0.4%;
+            }
+        }
+        .recent-posts{
+            p , h6{
+                @include open_sans (0.875rem);
+            }
+        }
+        .latest-projects{
+            h4{
+                @include play (1.5rem);
+            }         
+        }
+        .categories{
+            h4{
+                @include play (1.5rem);
+            }
+            h5{
+                @include open_sans (0.875rem);
+            }
+            span{
+                @include fontawsome (0.875rem);
+                color: $blue;
+            }
+        }
+ 
+    }
+}
+

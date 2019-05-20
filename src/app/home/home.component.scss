@@ -1,0 +1,116 @@
+@import '../sass/variables';
+@import '../sass/mixins';
+@import '../sass/placeholders';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+// common
+.arrows{
+    span{
+        @include backgroundColor($blue);
+        @include fontawsome (1.02rem);
+    }
+}
+.hero_sec{
+    @include backgroundColor($blackGrey);
+    padding: 19.68rem 0 16.43rem 0;
+    h1{
+        @include raleway (3.125rem);
+    }
+    p{
+        @include open_sans (1rem);
+        width: 40rem;
+        margin: 0 auto;
+        @media screen {
+            
+        }
+    }
+    button{
+        @include play (0.875rem);
+    }
+}
+.services{
+    @include backgroundColor($lightGrey);
+    @include padding_sec (5rem);
+    span{
+        @include fontawsome (3.125rem);
+    }
+    h3{
+        @include play (1.5rem);
+        color:$blue;
+    }
+    p{
+        @include open_sans (0.875rem);
+    }
+}
+.projects{
+    @include padding_sec (5rem);
+    h3{
+        @include play (1.5rem);
+        color:$blue;
+        &:after{
+            @include line ($blue);
+        }
+    }
+    .project_item{
+        @include backgroundColor($blue2);
+        height: 15rem;
+        .overlay{
+            @include overlay(5.625rem , 10.625rem )
+        }
+        &:hover{
+            @include backgroundColor($blue);
+            .overlay{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.numbers{
+    @include backgroundColor($blue);
+    @include padding_sec (3.75rem);
+    h2{
+        @include play (3.125rem);
+        &:after{
+            @include line ($white , 2.25rem);
+            margin: 0 auto;
+        }
+    }
+    p{
+        @include play (1.625rem);
+    }
+}
+.blog{
+    @include padding_sec (5rem);
+    h3{
+        @include play (1.5rem);
+        color:$blue;
+        &:after{
+            @include line ($blue);
+        }
+    }
+    // .blog-item{
+    //     // background-image: url("../../assets/img/Rectangle36.png");
+    //     // background-size: contain;
+    //     // width: 100%;
+    //     @include backgroundColor($blue);
+    //     width: 14.56rem;
+    //     height: 14rem;
+    // }
+    .media-body{
+        @include backgroundColor($lightGrey);
+        padding: 2rem 1rem;
+        span{
+            @include open_sans (0.875rem);
+        }
+        p{
+            @include open_sans (0.875rem);
+            margin-bottom: 2.3rem;
+        }
+        h6{
+            @include open_sans (0.875rem);
+            color: $blue;
+        }
+    }
+}
