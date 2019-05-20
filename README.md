@@ -1,3 +1,2 @@
-# Mastia
-Angular 7
-Bootstrap
+Project
+This project was generated with Angular CLI version 7.3.9.
